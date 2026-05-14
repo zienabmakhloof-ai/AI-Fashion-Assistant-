@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fashion Assistant | مساعد الموضة بالذكاء الاصطناعي</title>
+    <link rel="stylesheet" href="../static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="main-page">
+        <header>
+            <div class="logo">
+                <h1>AI Fashion</h1>
+                <span>مساعد الموضة الشخصي</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">الرئيسية</a></li>
+                    <li><a href="#how-it-works">كيف يعمل؟</a></li>
+                    <li><a href="#examples">نماذج</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-text">
+                    <h2>اكتشف أسلوبك الفريد مع مساعد الموضة بالذكاء الاصطناعي</h2>
+                    <p>احصل على توصيات موضة مخصصة، تصاميم فريدة، وعروض أزياء افتراضية</p>
+                    <button id="start-btn" class="cta-button">ابدأ الآن</button>
+                </div>
+                <div class="hero-image">
+                    <img src="download.jpeg" alt="AI Fashion Examples" id="hero-slider">
+                </div>
+            </section>
+
+            <section id="how-it-works" class="section">
+                <h2>كيف يعمل مساعد الموضة؟</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>أخبرنا عن تفضيلاتك</h3>
+                        <p>أجب على بعض الأسئلة البسيطة حول نمطك وألوانك المفضلة</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>يقوم الذكاء الاصطناعي بتحليل طلبك</h3>
+                        <p>نستخدم أحدث نماذج الذكاء الاصطناعي لفهم تفضيلاتك</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>احصل على نتائج مخصصة</h3>
+                        <p>ستحصل على صور أزياء، نصائح، وعرض أزياء افتراضي</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="examples" class="section">
+                <h2>نماذج من أعمالنا</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="fashion_1746253158_0.png" alt="Fashion Example 1">
+                        <p>نمط كاجوال عصري</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="fashion_1746253165_1.png" alt="Fashion Example 2">
+                        <p>نمط رسمي أنيق</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="fashion_1746253173_2.png" alt="Fashion Example 3">
+                        <p>نمط رياضي مريح</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2023 AI Fashion Assistant. جميع الحقوق محفوظة.</p>
+        </footer>
+    </div>
+
+    <!-- صفحة التفضيلات -->
+    <div class="container" id="preferences-page" style="display:none;">
+        <header>
+            <div class="logo">
+                <h1>AI Fashion</h1>
+                <span>التفضيلات الشخصية</span>
+            </div>
+            <button id="back-to-main" class="back-button">العودة للرئيسية</button>
+        </header>
+
+        <main>
+            <form id="fashion-preferences">
+                <h2>أخبرنا عن تفضيلات الموضة الخاصة بك</h2>
+                
+                <div class="form-section">
+                    <h3>المعلومات الأساسية</h3>
+                    <div class="form-group">
+                        <label for="gender">الجنس:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">اختر...</option>
+                            <option value="female">أنثى</option>
+                            <option value="male">ذكر</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age-group">الفئة العمرية:</label>
+                        <select id="age-group" name="age-group" required>
+                            <option value="">اختر...</option>
+                            <option value="teen">13-19 سنة</option>
+                            <option value="young">20-35 سنة</option>
+                            <option value="adult">36-50 سنة</option>
+                            <option value="senior">50+ سنة</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>تفضيلات الأنماط</h3>
+                    <p>اختر الأنماط التي تفضلها (يمكن اختيار أكثر من واحد):</p>
+                    
+                    <div class="style-options">
+                        <label class="style-option">
+                            <input type="checkbox" name="style" value="casual">
+                            <span>كاجوال</span>
+                        </label>
+                        <label class="style-option">
+                            <input type="checkbox" name="style" value="formal">
+                            <span>رسمي</span>
+                        </label>
+                        <label class="style-option">
+                            <input type="checkbox" name="style" value="sporty">
+                            <span>رياضي</span>
+                        </label>
+                        <label class="style-option">
+                            <input type="checkbox" name="style" value="bohemian">
+                            <span>بوهيمي</span>
+                        </label>
+                        <label class="style-option">
+                            <input type="checkbox" name="style" value="classic">
+                            <span>كلاسيكي</span>
+                        </label>
+                        <label class="style-option">
+                            <input type="checkbox" name="style" value="streetwear">
+                            <span>ستريت وير</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>الألوان المفضلة</h3>
+                    <p>اختر الألوان التي تفضلها:</p>
+                    <div class="color-options">
+                        <input type="color" id="color1" name="color1" value="#ff0000">
+                        <input type="color" id="color2" name="color2" value="#00ff00">
+                        <input type="color" id="color3" name="color3" value="#0000ff">
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>رفع صورتك (اختياري)</h3>
+                    <p>لتركيب الأزياء على صورتك:</p>
+                    <div class="upload-area" id="upload-container">
+                        <input type="file" id="user-image" accept="image/*" style="display:none;">
+                        <label for="user-image" class="upload-label">
+                            <img src="upload-icon.svg" alt="Upload Icon">
+                            <span>انقر لرفع الصورة</span>
+                        </label>
+                        <div id="image-preview" class="image-preview"></div>
+                    </div>
+                </div>
+
+                <button type="submit" class="cta-button">أنشئ توصياتي</button>
+            </form>
+        </main>
+    </div>
+
+    <!-- صفحة النتائج -->
+    <div class="container" id="results-page" style="display:none;">
+        <header>
+            <div class="logo">
+                <h1>AI Fashion</h1>
+                <span>توصياتك المخصصة</span>
+            </div>
+            <button id="back-to-preferences" class="back-button">تعديل التفضيلات</button>
+        </header>
+
+        <main>
+            <div class="results-header">
+                <h2>توصيات الموضة المخصصة لك</h2>
+                <p>تم إنشاؤها خصيصاً بناءً على تفضيلاتك</p>
+            </div>
+
+            <section class="text-results">
+                <h3>نصائح الموضة الخاصة بك</h3>
+                <div class="ai-generated-text" id="ai-text-advice">
+                    <!-- سيتم ملؤه بالنص المولد من الذكاء الاصطناعي -->
+                </div>
+            </section>
+
+            <section class="image-results">
+                <h3>تصاميم الأزياء المقترحة</h3>
+                <div class="outfits-grid" id="outfits-container">
+                    <!-- سيتم ملؤه بالصور المولدة من الذكاء الاصطناعي -->
+                </div>
+                <button id="generate-more-outfits" class="secondary-button">المزيد من التصاميم</button>
+            </section>
+
+            <section class="video-results">
+                <h3>عرض الأزياء الافتراضي</h3>
+                <div class="video-container">
+                    <video id="ai-generated-video" controls>
+                        <!-- سيتم تعيين مصدر الفيديو من JavaScript -->
+                        متصفحك لا يدعم تشغيل الفيديو.
+                    </video>
+                </div>
+                <div class="video-actions">
+                    <button id="download-video" class="secondary-button">حفظ الفيديو</button>
+                    <button id="share-results" class="cta-button">مشاركة النتائج</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="loading-overlay" class="loading-overlay" style="display:none;">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <p>جاري إنشاء توصياتك المخصصة...</p>
+            <p id="loading-status">المرحلة 1/3: جاري تحليل تفضيلاتك</p>
+        </div>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>
