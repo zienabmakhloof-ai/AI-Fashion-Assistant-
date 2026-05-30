@@ -16,16 +16,6 @@
 
 ---
 
-## 🇸🇦 نظرة عامة
-
-مساعد الموضة بالذكاء الاصطناعي هو تطبيق ويب متكامل يستخدم أحدث نماذج الذكاء الاصطناعي لتقديم:
-
-- 👗 **توصيات موضة مخصصة** بناءً على تفضيلاتك (الجنس، الفئة العمرية، الأنماط، الألوان)
-- 🖼️ **توليد صور أزياء** باستخدام Stable Diffusion
-- 🎬 **إنشاء فيديو إعلاني** يجمع الصور المولّدة مع تأثيرات انتقالية
-- 💬 **نصائح موضة ذكية** مدعومة بنموذج DeepSeek عبر OpenRouter
-
----
 
 ## 🌐 Overview
 
@@ -41,7 +31,7 @@ AI Fashion Assistant is a full-stack web application powered by generative AI mo
 ## 🏗️ Project Structure
 
 ```
-LLM-VLLM/
+AI-Fashion-Assistant/
 ├── main.py                  # Flask backend — API routes & model logic
 ├── requirements.txt         # Python dependencies
 ├── .env.example             # Environment variables template
@@ -78,8 +68,8 @@ LLM-VLLM/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/LLM-VLLM.git
-cd LLM-VLLM
+git clone https://github.com/zienabmakhloof-ai/AI-Fashion-Assistant-.git
+cd AI-Fashion-Assistant-
 ```
 
 ### 2. Create a Virtual Environment
@@ -137,6 +127,49 @@ Set your secrets in Colab's **Secrets** panel (🔑 icon) instead of a `.env` fi
 | `NGROK_TOKEN` | Your ngrok auth token |
 
 ---
+
+---
+
+## ✨ Generated Results
+
+### 🖼️ AI-Generated Outfit Images 
+
+<div align="center">
+
+| 👩 Female — Casual | 👩 Female — Formal | 👩 Female — Streetwear |
+|:---:|:---:|:---:|
+| ![](assets/examples/female_casual.png) | ![](assets/examples/female_formal.png) | ![](assets/examples/female_street.png) |
+
+| 👨 Male — Casual | 👨 Male — Formal | 👨 Male — Streetwear |
+|:---:|:---:|:---:|
+| ![](assets/examples/male_casual.png) | ![](assets/examples/male_formal.png) | ![](assets/examples/male_street.png) |
+
+</div>
+
+---
+
+### 🎬 Demo Video 
+
+<div align="center">
+
+https://github.com/zienabmakhloof-ai/AI-Fashion-Assistant-/assets/Demo.mp4
+
+> *The app automatically generates a promotional video combining all outfit images with smooth transition effects.*
+</div>
+
+---
+
+### 🖥️ App Interface | واجهة التطبيق
+
+<div align="center">
+
+| Input Form | Generating... | Final Results |
+|:---:|:---:|:---:|
+| ![](assets/screenshots/input_form.png) | ![](assets/screenshots/generating.png) | ![](assets/screenshots/results.png) |
+
+</div>
+
+-----
 
 ## 🔑 API Keys — Where to Get Them
 
