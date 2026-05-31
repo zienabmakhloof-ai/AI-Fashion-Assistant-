@@ -133,11 +133,11 @@ Set your secrets in Colab's **Secrets** panel (🔑 icon) instead of a `.env` fi
 
 <div align="center">
 
-| 👩 Female — Casual | 👩 Female — Formal | 👩 Female — Streetwear |
+| 👩 Female | 👩 Female | 👩 Female |
 |:---:|:---:|:---:|
 | ![](generated_media/fashion_1780204840_0.png) | ![](generated_media/fashion_1780204848_1.png) | ![](generated_media/fashion_1780204857_2.png) |
 
-| 👨 Male — Casual | 👨 Male — Formal | 👨 Male — Streetwear |
+| 👨 Male | 👨 Male | 👨 Male |
 |:---:|:---:|:---:|
 | ![](generated_media/fashion_1780205250_0.png) | ![](generated_media/fashion_1780205267_2.png) | ![](generated_media/fashion_1780205259_1.png) |
 
