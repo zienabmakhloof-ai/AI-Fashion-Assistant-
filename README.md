@@ -139,7 +139,7 @@ Set your secrets in Colab's **Secrets** panel (🔑 icon) instead of a `.env` fi
 
 | 👨 Male — Casual | 👨 Male — Formal | 👨 Male — Streetwear |
 |:---:|:---:|:---:|
-| ![](generated_media/fashion_1780205250_0.png) | ![](generated_media/fashion_1780205259_1.png) | ![](generated_media/fashion_1780205267_2.png) |
+| ![](generated_media/fashion_1780205250_0.png) | ![](generated_media/fashion_1780205267_2.png) | ![](generated_media/fashion_1780205259_1.png) |
 
 </div>
 
@@ -167,8 +167,6 @@ https://github.com/user-attachments/assets/45e639bc-0aad-4926-bbbb-ef8fdb449ab9
 
 <div align="center">
 
-| Home Page | Generating Form |
-|:---:|:---:|:---:|
 | ![](screenshots/home.png) | ![](screenshots/gen_form.png) |
 
 </div>
