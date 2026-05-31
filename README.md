@@ -1,4 +1,4 @@
-# 🎨 AI Fashion Assistant | مساعد الموضة بالذكاء الاصطناعي
+# 🎨 AI Fashion Assistant
 
 <div align="center">
 
@@ -10,7 +10,7 @@
 
 **A full-stack AI-powered fashion assistant that generates personalized outfit recommendations, AI-generated images, and promotional videos.**
 
-[العربية](#-نظرة-عامة) · [English](#-overview)
+[English](#-overview)
 
 </div>
 
@@ -86,10 +86,7 @@ source venv/bin/activate        # Linux / macOS
 pip install -r requirements.txt
 ```
 
-> **Note:** For GPU support, install PyTorch with CUDA:
-> ```bash
-> pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
-> ```
+```
 
 ### 4. Configure Environment Variables
 
@@ -138,11 +135,11 @@ Set your secrets in Colab's **Secrets** panel (🔑 icon) instead of a `.env` fi
 
 | 👩 Female — Casual | 👩 Female — Formal | 👩 Female — Streetwear |
 |:---:|:---:|:---:|
-| ![](assets/examples/female_casual.png) | ![](assets/examples/female_formal.png) | ![](assets/examples/female_street.png) |
+| ![](generated_media/fashion_1780204840_0.png) | ![](generated_media/fashion_1780204848_1.png) | ![](generated_media/fashion_1780204857_2.png) |
 
 | 👨 Male — Casual | 👨 Male — Formal | 👨 Male — Streetwear |
 |:---:|:---:|:---:|
-| ![](assets/examples/male_casual.png) | ![](assets/examples/male_formal.png) | ![](assets/examples/male_street.png) |
+| ![](generated_media/fashion_1780205250_0.png) | ![](generated_media/fashion_1780205259_1.png) | ![](generated_media/fashion_1780205267_2.png) |
 
 </div>
 
@@ -152,20 +149,27 @@ Set your secrets in Colab's **Secrets** panel (🔑 icon) instead of a `.env` fi
 
 <div align="center">
 
-https://github.com/zienabmakhloof-ai/AI-Fashion-Assistant-/assets/Demo.mp4
+
+https://github.com/user-attachments/assets/7731b747-7640-4d85-9489-0bfc905a1682
+
+
+
+https://github.com/user-attachments/assets/45e639bc-0aad-4926-bbbb-ef8fdb449ab9
+
+
 
 > *The app automatically generates a promotional video combining all outfit images with smooth transition effects.*
 </div>
 
 ---
 
-### 🖥️ App Interface | واجهة التطبيق
+### 🖥️ App Interface 
 
 <div align="center">
 
-| Input Form | Generating... | Final Results |
+| Home Page | Generating Form |
 |:---:|:---:|:---:|
-| ![](assets/screenshots/input_form.png) | ![](assets/screenshots/generating.png) | ![](assets/screenshots/results.png) |
+| ![](screenshots/home.png) | ![](screenshots/gen_form.png) |
 
 </div>
 
@@ -229,28 +233,11 @@ Generate fashion recommendations, images, and video.
 
 - **GPU recommended:** Image generation on CPU is very slow (several minutes per image). A GPU (NVIDIA with CUDA) will reduce this to seconds.
 - **First run:** Models will be downloaded automatically (~4-8 GB). This takes time once, then they are cached.
-- **Generated files:** Images and videos are saved to `generated_media/` and are excluded from Git.
+- **Generated files:** Images and videos are saved to `generated_media/`.
 
 ---
 
-## 🛡️ Security
 
-- **Never commit your `.env` file.** It is already listed in `.gitignore`.
-- All API keys must be stored in `.env` (locally) or in your cloud provider's secret manager (Colab Secrets, GitHub Actions Secrets, etc.).
-- Rotate any key that was previously exposed in source code.
-
-
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
----
 
 <div align="center">
 Made with ❤️ using Flask, PyTorch, and Diffusers
